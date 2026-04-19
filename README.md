@@ -1,149 +1,219 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+<p align="center">
+  <img src="./assets/banner.png" alt="Coink AI Banner" width="40%">
+</p>
 
-## Contexto
+<p align="center">
+Seu assistente inteligente de finanças pessoais com IA Generativa
+</p>
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
-
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
-
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+<p align="center">
+Controle seus gastos, acompanhe seu orçamento e receba orientações financeiras de forma simples, prática e inteligente.
+</p>
 
 ---
 
-## O Que Você Deve Entregar
+# 📌 Sobre o Projeto
 
-### 1. Documentação do Agente
+O **Coink AI** é um agente financeiro inteligente criado para ajudar pessoas a organizarem suas finanças pessoais no dia a dia.
 
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+Muitas pessoas têm dificuldade para entender para onde o dinheiro está indo, controlar despesas mensais e criar hábitos financeiros saudáveis. Pensando nisso, o Coink AI utiliza **Inteligência Artificial Generativa** para transformar dados financeiros em respostas úteis, claras e contextualizadas.
 
 ---
 
-### 2. Base de Conhecimento
+# 🚀 Principais Funcionalidades
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+- 📊 Visualização do total gasto no mês
+- 💰 Cálculo automático do saldo restante
+- 📄 Histórico de transações financeiras
+- 🤖 Chat inteligente com IA local via Ollama
+- 📌 Respostas baseadas nos dados reais do usuário
+- 🔒 Segurança contra respostas inventadas
+- ⚡ Interface rápida e intuitiva em Streamlit
 
 ---
 
-### 3. Prompts do Agente
+# 🖥️ Interface da Aplicação
 
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+<p align="center">
+  <img src="./assets/interface-coink.png" alt="Interface Coink AI" width="100%">
+</p>
 
 ---
 
-### 4. Aplicação Funcional
+# 🧠 Tecnologias Utilizadas
 
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+| Categoria | Tecnologias |
+|----------|-------------|
+| Interface | Streamlit |
+| Linguagem | Python |
+| IA Local | Ollama |
+| Manipulação de Dados | Pandas |
+| Estrutura de Dados | JSON / CSV |
+| Versionamento | Git + GitHub |
 
 ---
 
-### 6. Pitch
+# 📂 Estrutura do Projeto
 
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
+```bash
+finance-assistant-ai/
 │
-├── 📄 README.md
+├── assets/
+│   ├── banner.png
+│   ├── coink-logo.png
+│   └── interface-coink.png
 │
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+├── data/
+│   ├── categorias.json
+│   ├── orcamento_mensal.json
+│   ├── resumo_usuario.json
+│   └── transacoes.csv
 │
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
+├── docs/
+│   ├── 01-documentacao-agente.md
+│   ├── 02-base-conhecimento.md
+│   ├── 03-prompts.md
+│   ├── 04-metricas.md
+│   └── 05-pitch.md
 │
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
+├── src/
+│   ├── agente.py
+│   ├── app.py
+│   ├── config.py
+│   ├── requirements.txt
+│   └── utils.py
 │
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+└── README.md
 ```
 
 ---
 
-## Dicas Finais
+# ⚙️ Como Executar o Projeto
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+## 1️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/bryannduart/finance-assistant-ai.git
+cd finance-assistant-ai
+```
+
+---
+
+## 2️⃣ Instale as dependências
+
+```bash
+py -m pip install -r src/requirements.txt
+```
+
+ou
+
+```bash
+python -m pip install -r src/requirements.txt
+```
+
+---
+
+## 3️⃣ Instale o Ollama
+
+Baixe e instale pelo site oficial:
+
+👉 https://ollama.com/download
+
+---
+
+## 4️⃣ Baixe o modelo local
+
+```bash
+ollama pull llama3
+```
+
+---
+
+## 5️⃣ Execute a aplicação
+
+```bash
+py -m streamlit run src/app.py
+```
+
+ou
+
+```bash
+python -m streamlit run src/app.py
+```
+
+---
+
+# 💬 Exemplos de Perguntas no Chat
+
+```text
+Quanto eu já gastei esse mês?
+Qual é meu saldo restante?
+Quais foram minhas últimas transações?
+Em que categoria eu mais gastei?
+Onde posso economizar?
+```
+
+---
+
+# 🔒 Segurança e Confiabilidade
+
+O Coink AI foi desenvolvido para responder com base nos dados cadastrados, mantendo foco em finanças pessoais e evitando respostas inventadas.
+
+## Estratégias adotadas
+
+- Respostas baseadas em dados reais armazenados em arquivos JSON e CSV
+- Uso de contexto financeiro do usuário para gerar respostas mais assertivas
+- Limitação clara de escopo para evitar respostas fora da proposta do agente
+- Recusa de pedidos sensíveis ou indevidos
+- Transparência quando faltar contexto ou informação suficiente
+- Integração com modelo local via Ollama, reduzindo dependência de serviços externos pagos
+
+---
+
+# 📈 Resultados Obtidos
+
+Durante os testes realizados, o Coink AI apresentou resultados satisfatórios para a proposta inicial do projeto.
+
+## Principais pontos observados
+
+- Respostas corretas sobre total gasto no mês
+- Cálculo funcional do saldo restante
+- Consulta de transações exibida corretamente na interface
+- Integração bem-sucedida entre Streamlit, Python, dados mockados e Ollama
+- Respostas contextualizadas com base nas informações disponíveis
+- Interface simples, funcional e adequada para demonstração do agente
+
+## O que pode evoluir futuramente
+
+- Melhor formatação monetária em padrão brasileiro
+- Registro de novas despesas diretamente pelo chat
+- Dashboard com gráficos e análises visuais
+- Histórico de conversas
+- Respostas ainda mais naturais e personalizadas
+- Melhor tratamento visual para erros e carregamento
+
+---
+
+# 🌍 Impacto do Projeto
+
+O Coink AI demonstra como a Inteligência Artificial pode ser aplicada a um problema real do cotidiano: o controle financeiro pessoal.
+
+Com uma solução simples e acessível, o projeto pode contribuir para que mais pessoas:
+
+- entendam melhor seus gastos mensais
+- criem hábitos financeiros mais saudáveis
+- reduzam desperdícios
+- tomem decisões mais conscientes sobre seu dinheiro
+- tenham maior organização financeira no dia a dia
+
+Além disso, o projeto mostra o potencial da IA Generativa quando combinada com contexto, dados estruturados e foco em utilidade prática.
+
+---
+
+# 👨‍💻 Autor
+
+**Bryan Duarte**  
+Estudante de Engenharia de Software  
+Desenvolvedor do projeto **Coink AI**
+
+GitHub: [bryannduart](https://github.com/bryannduart)
