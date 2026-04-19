@@ -2,10 +2,21 @@ import streamlit as st
 from agente import responder_usuario
 from utils import calcular_gastos_mes, calcular_saldo_restante, ultimas_transacoes
 
-st.set_page_config(page_title="Coink AI", page_icon="🐷", layout="wide")
+st.set_page_config(page_title="Coink AI", page_icon="assets/coink-logo.png", layout="wide")
 
-st.title("🐷 Coink AI")
-st.caption("Seu assistente inteligente de finanças pessoais")
+col1, col2 = st.columns([0.8, 6], vertical_alignment="center")
+
+with col1:
+    st.image("assets/coink-logo.png", width=300)
+
+with col2:
+    st.markdown(
+        """
+        <h1 style='margin-bottom:0; padding-bottom:0;'>Coink AI</h1>
+        <p style='margin-top:0; color:gray;'>Seu assistente inteligente de finanças pessoais</p>
+        """,
+        unsafe_allow_html=True
+    )
 
 col1, col2 = st.columns(2)
 
