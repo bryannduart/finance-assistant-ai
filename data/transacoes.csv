@@ -1,11 +1,11 @@
-data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+data,descricao,categoria,tipo,valor,forma_pagamento
+2026-04-01,Salario,Receita,receita,3500.00,Transferencia
+2026-04-02,Supermercado Guanabara,Alimentacao,despesa,180.50,Cartao
+2026-04-03,Uber,Transporte,despesa,22.00,Pix
+2026-04-05,Netflix,Assinaturas,despesa,39.90,Cartao
+2026-04-07,Restaurante,Alimentacao,despesa,65.00,Pix
+2026-04-10,Farmacia,Saude,despesa,48.75,Debito
+2026-04-12,Curso Online,Educacao,despesa,89.90,Cartao
+2026-04-15,Cinema,Lazer,despesa,32.00,Pix
+2026-04-18,Conta de Luz,Moradia,despesa,120.00,Boleto
+2026-04-20,Internet,Moradia,despesa,99.90,Cartao

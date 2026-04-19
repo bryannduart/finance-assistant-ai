@@ -1,0 +1,14 @@
+{
+  "mes_referencia": "2026-04",
+  "orcamento_total": 3500.00,
+  "limites_por_categoria": {
+    "Alimentacao": 800.00,
+    "Transporte": 300.00,
+    "Moradia": 1200.00,
+    "Lazer": 250.00,
+    "Saude": 200.00,
+    "Educacao": 200.00,
+    "Assinaturas": 100.00,
+    "Outros": 150.00
+  }
+}
